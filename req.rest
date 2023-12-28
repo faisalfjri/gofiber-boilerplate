@@ -1,0 +1,33 @@
+### Welcome
+GET http://localhost:8080
+
+### Get all books
+GET http://localhost:8080/api/books
+
+### Create a new book
+POST http://localhost:8080/api/books
+Content-Type: application/json
+
+{
+    "title":"Golang Beginner",
+    "description":"Tutorial golang untuk pemula",
+    "author":"Faisal",
+    "publish_date":"2022-02-20"
+}
+
+### Show a book by id
+GET http://localhost:8080/api/books/1
+
+### Update a book
+PUT http://localhost:8080/api/books/1
+Content-Type: application/json
+
+{
+    "title":"Golang Edited",
+    "description":"Tutorial golang untuk pemula",
+    "author":"Faisal Fajri",
+    "publish_date":"2022-02-23"
+}
+
+### Delete book
+DELETE http://localhost:8080/api/books/1
